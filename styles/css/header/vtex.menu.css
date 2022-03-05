@@ -1,0 +1,141 @@
+
+.submenuWrapper {
+    width: 250px;
+    padding: 0;
+    left: 0;
+}
+
+.submenuContainer--sub-deptos {
+    position: absolute;
+    
+}
+
+.submenuContainer--sub-menus,
+.submenuContainer--sub-sub-menus {
+    /* height: auto; */
+    position: relative;
+    left: 252px;
+    top: -48px;
+}
+
+.menuContainer--menu-deptos {
+    background-color: #441afa;
+    justify-content: center;
+}
+
+.styledLink--menu-item-deptos ::before {
+    content: "";
+    background-image: url(https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/menu-branco___d782ee8899a81fa256d85766cd68e76d.png);
+    width: 20px;
+    height: 13.33px;
+    margin-right: 1rem;
+}
+
+.styledLinkContent--menu-item-deptos {
+    color: white;
+    font-weight: 700;
+}
+
+.menuContainerNav {
+    width: 100%;
+    border-bottom: 1px solid #eeeeee;
+}
+/* .menuContainerNav--drawer-parceiras,
+.menuContainerNav--drawer-representante {
+    border-bottom: 1px solid white;
+} */
+
+.styledLinkContent--menu-vertodos {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+/* Drawer */
+.styledLinkContent--drawer-font {
+    font-size: 14px;
+}
+.styledLinkContainer--drawer-font {
+    padding: 16px 0;
+}
+
+.menuItem--drawer-parceiras,
+.menuItem--drawer-representante,
+.menuItem--drawer-revendedor {
+    width: 100%;
+    background-color: #eeeeee;
+}
+
+.styledLinkContent--drawer-outlet,
+.styledLinkContent--menu-item-outlet,
+.styledLinkContent--drawer-novidades,
+.styledLinkContent--drawer-conta,
+.styledLinkContent--drawer-atendimento,
+.styledLinkContent--menu-item-novidades,
+.styledLinkContent--drawer-parceiras,
+.styledLinkContent--drawer-representante,
+.styledLinkContent--drawer-revendedor {
+    font-weight: 700;
+}
+
+.styledLinkContent--drawer-outlet,
+.styledLinkContent--drawer-conta,
+.styledLinkContent--drawer-atendimento,
+.styledLinkContent--menu-item-outlet{
+    color: #441afa;
+}
+
+/* Hover Drawer */
+.menuItem--drawer-deptos--isOpen
+.styledLinkContent--drawer-deptos,
+.menuItem--drawer-nivel-1--isOpen
+.styledLinkContent--drawer-nivel-1,
+.menuItem--drawer-nivel-2--isOpen
+.styledLinkContent--drawer-nivel-2 {
+    color: #441afa;
+    font-weight: 700;
+}
+
+/* Hover menu principal */
+.menuItem--submenus1--isOpen
+.styledLinkContent--submenus1,
+.menuItem--submenus2--isOpen
+.styledLinkContent--submenus2,
+.menuItem--submenus3--isOpen
+.styledLinkContent--submenus3,
+.menuItem--menu-vertodos :hover
+.styledLinkContent--menu-vertodos {
+    color: #441afa;
+    font-weight: 700;
+}
+
+.accordionIcon {
+    display: none;
+}
+
+/* Animação accordion Menu*/
+.menuItem--submenus1--isOpen
+.styledLinkIcon--submenus1 {
+    animation: girar 0.5s forwards;
+}
+.menuItem--submenus2--isOpen
+.styledLinkIcon--submenus2 {
+    animation: girar 0.5s forwards;
+}
+
+/* Animação accordion Drawer*/
+.menuItem--drawer-deptos--isOpen
+.styledLinkIcon--drawer-deptos {
+    animation: girar 0.5s forwards;
+}
+.menuItem--drawer-nivel-1--isOpen
+.styledLinkIcon--drawer-nivel-1 {
+    animation: girar 0.5s forwards;
+}
+.menuItem--drawer-nivel-2--isOpen
+.styledLinkIcon--drawer-nivel-2 {
+    animation: girar 0.5s forwards;
+}
+
+@keyframes girar {
+    100% {transform: rotate(180deg)};
+}

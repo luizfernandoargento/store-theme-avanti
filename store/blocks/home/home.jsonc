@@ -1,0 +1,147 @@
+{
+  "store.home": {
+    "blocks": [
+      "responsive-layout.desktop#home",
+      "responsive-layout.mobile#home"
+    ]
+  },
+  "responsive-layout.desktop#home": {
+    "children": [
+      "flex-layout.row#image-banner-home",
+      "flex-layout.row#deals",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "info-card#home",
+      "rich-text#question",
+      "rich-text#link",
+      "newsletter"
+    ]
+  },
+  "flex-layout.row#image-banner-home": {
+    "props": {
+      "blockClass": "image-banner-home"
+    },
+    "children": [
+      "image#banner-home"
+    ]
+  },
+  "image#banner-home": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/shopnow___ca5adb32114c61df7af1b3e97ac0d5ac.png",
+      "blockClass": "banner-home"
+    }
+  },
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Summer",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": [
+      "list-context.product-list#demo1"
+    ]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+  "rich-text#question": {
+    "props": {
+      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "blockClass": "question"
+    }
+  },
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Reach us at**\nwww.vtex.com.br",
+      "blockClass": "link"
+    }
+  },
+  // MOBILE
+  "responsive-layout.mobile#home": {
+    "children": [
+      "flex-layout.row#image-banner-home-mobile",
+      "flex-layout.row#deals-carousel"
+    ]
+  },
+  "flex-layout.row#image-banner-home-mobile": {
+    "props": {
+      "blockClass": "image-banner-home-mobile",
+      "fullWidth": true
+    },
+    "children": [
+      "image#banner-home-mobile"
+    ]
+  },
+  "image#banner-home-mobile": {
+    "props": {
+      "src": "https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/shopnow___ca5adb32114c61df7af1b3e97ac0d5ac.png",
+      "blockClass": "banner-home-mobile"
+    }
+  },
+  "flex-layout.row#deals-carousel": {
+    "children": [
+      "slider-layout#deals"
+    ],
+    "props": {
+      "blockClass": "deals-carousel"
+    }
+  },
+  "slider-layout#deals": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "usePagination": true,
+      "autoplay": {
+        "stopOnHover": true,
+        "timeout": 3000
+      },
+      "blockClass": "deals-carousel"
+    },
+    "children": [
+      "flex-layout.col#deals1",
+      "flex-layout.col#deals2",
+      "flex-layout.col#deals3",
+      "flex-layout.col#deals4"
+    ]
+  }
+}

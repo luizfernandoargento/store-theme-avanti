@@ -1,0 +1,69 @@
+.flexRow--wrapper__top-bar {
+  background-color: black;
+  height: 44px;
+}
+
+.flexRowContent--wrapper__top-bar,
+.flexRowContent--main-header,
+.flexRowContent--menu-link {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.flexCol--wrapper__col,
+.flexCol--logo-search-desktop,
+.flexCol--top-right,
+.flexCol--col-menu-deptos-h,
+.flexCol--main-header-right-mobile {
+  flex-direction: row;
+}
+
+.flexCol--top-right {
+  justify-content: flex-end;
+}
+
+.flexColChild--top-right {
+  margin-left: 10px;
+}
+
+.flexCol--wrapper__col-right {
+  display: flex;
+  text-decoration: underline;
+  font-size: 12px;
+  justify-content: flex-end;
+}
+
+.flexRow--menu-link,
+.flexRowContent--menu-link {
+  background-color: #f0f0f0;
+}
+
+.flexRowContent--main-header-mobile {
+  justify-content: space-between;
+}
+
+.flexRowContent--searchbar-mobile {
+  background-color: #F0F0F0;
+  width: 100%;
+}
+
+.flexCol--searchbar-desktop {
+  min-width: 430px;
+  margin-right: 130px;
+}
+.flexRowContent--searchbar-mobile {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.flexColChild--login :global(.vtex-button){
+  background-image: url(https://avantivtexio.vtexassets.com/assets/vtex/assets-builder/avantivtexio.store-theme/0.0.0/img/desktop/user___f311137127224b10917945e6b0a15072.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+.flexRow--top-bar-mobile {
+  background-color: black;
+  width: 100%;
+}

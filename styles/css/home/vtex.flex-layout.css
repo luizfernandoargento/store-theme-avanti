@@ -1,0 +1,13 @@
+.flexRow--image-banner-home {
+    max-width: 1200px;
+    margin: 10px auto;
+}
+
+.flexRow--deals-carousel {
+    background-color: #eeeeee;
+    padding: 8px;
+}
+
+.flexRow--deals-carousel .flexCol {
+    flex-direction: row;
+}

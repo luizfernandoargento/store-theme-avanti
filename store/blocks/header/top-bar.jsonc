@@ -1,0 +1,63 @@
+{
+  "flex-layout.row#top-bar": {
+    "props": {
+      "blockClass": "wrapper__top-bar"
+    },
+    "children": [
+      "flex-layout.col#top-bar-left",
+      "flex-layout.col#top-bar-right"
+    ]
+  },
+
+  "flex-layout.col#top-bar-left": {
+    "children": [
+      "rich-text#top-bar-promo"
+    ],
+    "props": {
+      "blockClass": ["wrapper__col", "wrapper__col-left"]
+    }
+  },
+
+  "flex-layout.col#top-bar-right": {
+    "children": [
+      "link#top-bar-link1",
+      "rich-text#vertical-bar",
+      "link#top-bar-link2"
+    ],
+    "props": {
+      "blockClass": ["wrapper__col", "wrapper__col-right"],
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    }
+  },
+
+  "rich-text#top-bar-promo": {
+    "props": {
+      "blockClass": ["wrapper__top-bar", "promo__top-bar"],
+      "text": "Frete grátis acima de R$299,00 para Região Sudeste"
+    }
+  },
+
+  "link#top-bar-link1": {
+    "props": {
+      "href": "",
+      "label": "SEJA UM REVENDEDOR",
+      "blockClass": "top-bar-link"
+    }
+  },
+
+  "rich-text#vertical-bar": {
+    "props": {
+      "blockClass": "vertical-bar",
+      "text": "|"
+    }
+  },
+
+  "link#top-bar-link2": {
+    "props": {
+      "href": "",
+      "label": "SEJA UM REPRESENTANTE",
+      "blockClass": "top-bar-link"
+    }
+  }
+}

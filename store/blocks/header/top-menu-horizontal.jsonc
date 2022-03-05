@@ -1,0 +1,234 @@
+{
+  // DEPARTAMENTO 1
+  "vtex.menu@2.x:menu#depto1-menu-h": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "blockClass": [
+        "menu-depto1"
+      ]
+    },
+    "children": [
+      "menu-item#depto1-h"
+    ]
+  },
+  "menu-item#depto1-h": {
+    "props": {
+      "id": "menu-item-depto1-h",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "DEPARTAMENTO 1",
+        "text": "DEPARTAMENTO 1"
+      },
+      "blockClass": [
+        "menu-item-depto1-h", "submenus1"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#cats1"
+    ]
+  },
+  "vtex.menu@2.x:submenu#cats1": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "sub-depto1"
+      ]
+    },
+    "children": [
+      "menu-item#categoria1-h",
+      "menu-item#categoria2-h",
+      "menu-item#vertodos-categoria"
+    ]
+  },
+  "menu-item#categoria1-h": {
+    "props": {
+      "id": "menu-item-categoria1-h",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Categoria 1",
+        "text": "Categoria 1"
+      },
+      "blockClass": "submenus2",
+      "iconPosition": "right",
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "black",
+        "mutedClassName": "c-action-primary"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#subcat1"
+    ]
+  },
+  "menu-item#categoria2-h": {
+    "props": {
+      "id": "menu-item-categoria2-h",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Categoria 2",
+        "text": "Categoria 2"
+      },
+      "blockClass": "submenus2",
+      "iconPosition": "right",
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "black",
+        "mutedClassName": "c-action-primary"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#subcat2"
+    ]
+  },
+
+  // DEPARTAMENTO 2
+  "vtex.menu@2.x:menu#depto2-menu-h": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "blockClass": [
+        "menu-depto2"
+      ]
+    },
+    "children": [
+      "menu-item#depto2-h"
+    ]
+  },
+  "menu-item#depto2-h": {
+    "props": {
+      "id": "menu-item-depto2-h",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "DEPARTAMENTO 2",
+        "text": "DEPARTAMENTO 2"
+      },
+      "blockClass": [
+        "menu-item-depto2-h", "submenus1"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#cats2"
+    ]
+  },
+  "vtex.menu@2.x:submenu#cats2": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "sub-depto2"
+      ]
+    },
+    "children": [
+      "menu-item#categoria3-h",
+      "menu-item#categoria4-h",
+      "menu-item#vertodos-categoria"
+    ]
+  },
+  "menu-item#categoria3-h": {
+    "props": {
+      "id": "menu-item-categoria3-h",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Categoria 3",
+        "text": "Categoria 3"
+      },
+      "blockClass": "submenus2"
+    }
+  },
+  "menu-item#categoria4-h": {
+    "props": {
+      "id": "menu-item-categoria4-h",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Categoria 4",
+        "text": "Categoria 4"
+      },
+      "blockClass": "submenus2"
+    }
+  },
+
+  // Novidades
+  "vtex.menu@2.x:menu#novidades": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "blockClass": [
+        "menu-novidades"
+      ]
+    },
+    "children": [
+      "menu-item#novidades"
+    ]
+  },
+  "menu-item#novidades": {
+    "props": {
+      "id": "menu-item-novidades",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "NOVIDADES",
+        "text": "NOVIDADES"
+      },
+      "blockClass": [
+        "menu-item-novidades"
+      ]
+    }
+  },
+  // Outlet
+  "vtex.menu@2.x:menu#outlet": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "blockClass": [
+        "menu-outlet"
+      ]
+    },
+    "children": [
+      "menu-item#outlet"
+    ]
+  },
+  "menu-item#outlet": {
+    "props": {
+      "id": "menu-item-outlet",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "OUTLET",
+        "text": "OUTLET"
+      },
+      "blockClass": [
+        "menu-item-outlet"
+      ]
+    }
+  }
+}

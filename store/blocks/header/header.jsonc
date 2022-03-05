@@ -1,0 +1,206 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#top-bar",
+      "sticky-layout#4-desktop",
+      "flex-layout.row#3-desktop"
+    ]
+  },
+
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "menu-link",
+      "horizontalAlign": "left",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      // "vtex.menu@2.x:menu#websites"
+      "flex-layout.col#departamentos-all",
+      "flex-layout.col#departamentos-h"
+    ]
+  },
+  "flex-layout.col#departamentos-all": {
+    "props": {
+      "blockClass": "col-menu-deptos-all"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#depto-menu-all"
+    ]
+  },
+  "flex-layout.col#departamentos-h": {
+    "props": {
+      "blockClass": "col-menu-deptos-h"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#depto1-menu-h",
+      "vtex.menu@2.x:menu#depto2-menu-h",
+      "vtex.menu@2.x:menu#novidades",
+      "vtex.menu@2.x:menu#outlet"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "15%"
+    }
+  },
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#4-desktop"]
+  },
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#search-bar",
+      // "flex-layout.col#spacer",
+      "flex-layout.col#top-right"
+    ]
+  },
+  "flex-layout.col#search-bar": {
+    "props": {
+      "blockClass": "searchbar-desktop"
+    },
+    "children": [
+      "search-bar#main"
+    ]
+  },
+
+  "search-bar#main": {
+    "props": {
+      "placeholder": "O que você procura?"
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+    "blockClass": "logo-search-desktop",
+      "verticalAlign": "top",
+      "horizontalAlign": "center"
+    },
+    "children": ["image#logo-desktop"]
+  },
+  "image#logo-desktop": {
+    "props": {
+      "src": "assets/imgs/logo/logo-avanti@2x.png",
+      "blockClass": "logo-desktop"
+    }
+  },
+  "flex-layout.col#top-right": {
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "blockClass": ["top-right"]
+    },
+    "children": [
+      "link#customer-service",
+      "flex-layout.col#login-personal",
+      "minicart.v2"
+    ]
+  },
+  "link#customer-service": {
+    "props": {
+      "blockClass": "customer-service",
+      "displayMode": "anchor",
+      "href": "",
+      "label": "Atendimento ao Cliente"
+    }
+  },
+
+  "header-layout.mobile": {
+    "children": [
+      "flex-layout.row#top-bar-mobile",
+      "sticky-layout#1-mobile",
+      "flex-layout.row#search-bar-mobile"
+    ]
+  },
+
+  "flex-layout.row#top-bar-mobile": {
+    "children": ["rich-text#top-bar-promo-mobile"],
+    "props": {
+      "blockClass": "top-bar-mobile",
+      "horizontalAlign": "center"
+    }
+  },
+
+  "rich-text#top-bar-promo-mobile": {
+    "props": {
+      "blockClass": ["top-bar-mobile"],
+      "text": "Frete grátis acima de R$299,00 para Região Sudeste."
+    }
+  },
+
+  "sticky-layout#1-mobile": {
+    "children": [
+      "flex-layout.row#1-mobile"
+    ]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer",
+      "image#logo-mobile",
+      // "flex-layout.col#spacer",
+      // "flex-layout.col#main-header-right-mobile"
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#search-bar-mobile": {
+    "children": [ "search-bar#main" ],
+    "props": {
+      "blockClass": "searchbar-mobile",
+      "horizontalAlign": "center",
+      "fullWidth": true
+    }
+  },
+
+  "image#logo-mobile": {
+    "props": {
+      "src": "assets/imgs/logo/logo-avanti@2x.png",
+      "maxHeight": "70px",
+      "blockClass": "logo-mobile"
+    }
+  },
+
+  "login#personal": {
+    "props": {
+      "hideIconLabel": true,
+      "showIconProfile" : false
+    }
+  },
+  "flex-layout.col#main-header-right-mobile": {
+    "children": [
+      "flex-layout.col#login-personal",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-right-mobile",
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#login-personal": {
+    "children": ["login#personal"],
+    "props": {
+      "blockClass":"login"
+    }
+  }
+  
+}

@@ -1,0 +1,13 @@
+.wrapper--vertical-bar {
+  font-size: 12px;
+  padding: 0 7px;
+  color: white;
+}
+.paragraph--promo__top-bar,
+.paragraph--top-bar-mobile {
+  font-size: 12px;
+  color: white;
+}
+.container--top-bar-mobile {
+  justify-content: center;
+}
